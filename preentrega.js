@@ -1,8 +1,6 @@
 function calcularPrecioConRecargo() {
-    // Pedir nombre de usuario
     let usuario = prompt("Ingrese su nombre de usuario:");
 
-    // Pedir contraseña con al menos un número y una letra
     let contrasenaValida = false;
     let contrasena;
     
@@ -15,7 +13,6 @@ function calcularPrecioConRecargo() {
     }
     }
 
-    // Mostrar opciones de precios y permitir al usuario elegir
     let precios = [100, 200, 300];
 
     console.log("Opciones de precios:");
@@ -23,7 +20,6 @@ function calcularPrecioConRecargo() {
     console.log(`Opción ${i + 1}: Precio: ${precios[i]}`);
     }
 
-    // Pedir al usuario que elija una opción
     let opcionElegida = parseInt(prompt("Planes a elegir: 2 veces por semana (1), Solo pilates(2), Pase libre(3)"));
     
     if (opcionElegida >= 1 && opcionElegida <= 3) {
@@ -35,5 +31,4 @@ function calcularPrecioConRecargo() {
     }
 }
 
-  // Llamando a la función
 calcularPrecioConRecargo();
